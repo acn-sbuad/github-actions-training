@@ -1,0 +1,12 @@
+name: learn-github-actions
+on: [push]
+jobs:
+  build ConsoleApp:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup dotnet
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '5.0.x'
+      - run: dotnet build DemoApp/DemoApp.csproj
