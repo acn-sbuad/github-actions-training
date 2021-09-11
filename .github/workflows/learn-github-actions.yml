@@ -9,4 +9,4 @@ jobs:
         uses: actions/setup-dotnet@v1
         with:
           dotnet-version: '5.0.x'
-      - run: dotnet build DemoApp\DemoApp.csproj
+      - run: dotnet build DemoApp.csproj
